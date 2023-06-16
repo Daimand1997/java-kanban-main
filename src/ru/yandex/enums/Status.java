@@ -3,6 +3,5 @@ package ru.yandex.enums;
 public enum Status {
     NEW,
     DONE,
-    IN_PROGRESS,
-    SSS
+    IN_PROGRESS
 }
