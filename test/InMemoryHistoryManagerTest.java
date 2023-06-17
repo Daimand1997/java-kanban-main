@@ -5,8 +5,6 @@ import ru.yandex.managers.HistoryManager;
 import ru.yandex.managers.impl.FileBackedTasksManager;
 import ru.yandex.managers.impl.InMemoryHistoryManager;
 import ru.yandex.managers.impl.InMemoryTasksManager;
-import ru.yandex.tasks.Epic;
-import ru.yandex.tasks.SubTask;
 import ru.yandex.tasks.Task;
 
 class InMemoryHistoryManagerTest {
@@ -18,7 +16,7 @@ class InMemoryHistoryManagerTest {
     public Task taskThird;
 
     @BeforeEach
-    void init() {
+    void init() throws Exception {
         tasksManager = new FileBackedTasksManager("resources/saveTasks.csv");
         historyManager = new InMemoryHistoryManager();
 

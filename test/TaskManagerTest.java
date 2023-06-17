@@ -20,7 +20,7 @@ abstract class TaskManagerTest<T extends TasksManager> {
     public Task subTask;
 
     @Test
-    void updateTask() {
+    void updateTask() throws Exception {
         task.setStatus(Status.DONE);
         tasksManager.updateTask(task);
         assertEquals(tasksManager.getTaskById(task.getId()).getStatus(), Status.DONE);
@@ -43,7 +43,7 @@ abstract class TaskManagerTest<T extends TasksManager> {
     }
 
     @Test
-    void createTask() {
+    void createTask() throws Exception {
         assertEquals(1, task.getId());
 
         Task taskSecond = new Task("hhhh", "gggg");

@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class InMemoryTaskManagerTest extends TaskManagerTest{
 
     @BeforeEach
-    void init() {
+    void init() throws Exception {
         tasksManager = new InMemoryTasksManager();
         historyManager = new InMemoryHistoryManager();
         task = new Task("Покушать", "Ням-ням");

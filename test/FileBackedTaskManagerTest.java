@@ -8,12 +8,14 @@ import ru.yandex.tasks.Epic;
 import ru.yandex.tasks.SubTask;
 import ru.yandex.tasks.Task;
 
+import java.time.LocalDateTime;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FileBackedTaskManagerTest extends TaskManagerTest {
 
     @BeforeEach
-    void init() {
+    void init() throws Exception {
         tasksManager = new FileBackedTasksManager("resources/saveTasks.csv");
 
         historyManager = new InMemoryHistoryManager();
@@ -52,7 +54,7 @@ public class FileBackedTaskManagerTest extends TaskManagerTest {
     }
 
     @Test
-    void historyEmptyList() {
+    void historyEmptyList() throws Exception {
         assertEquals(2, tasksManager.getHistory().getHistory().size());
 
         Task task2 = new Task("Покушать", "Ням-ням");
