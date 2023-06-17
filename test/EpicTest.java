@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import ru.yandex.enums.Status;
 import ru.yandex.managers.TasksManager;
 import ru.yandex.managers.impl.InMemoryTasksManager;

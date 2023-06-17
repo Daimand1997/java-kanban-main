@@ -1,7 +1,4 @@
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import ru.yandex.managers.TasksManager;
-import ru.yandex.managers.impl.FileBackedTasksManager;
 import ru.yandex.managers.impl.InMemoryHistoryManager;
 import ru.yandex.managers.impl.InMemoryTasksManager;
 import ru.yandex.tasks.Epic;
