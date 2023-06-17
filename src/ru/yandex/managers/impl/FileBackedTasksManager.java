@@ -33,7 +33,7 @@ public class FileBackedTasksManager extends InMemoryTasksManager {
         Task task = new Task("Покушать", "Ням-ням");
         task.setDuration(1000);
         task.setStartTime(LocalDateTime.now());
-        Task task2 = new Task("Поспать", "Храп-храп");
+        Task task2 = new Task("Поспать", "Храп-храп-храп");
         task2.setDuration(1000);
         task2.setStartTime(LocalDateTime.now().plusSeconds(2000));
         Task epic = new Epic("Погулять", "Прыг-прыг");
